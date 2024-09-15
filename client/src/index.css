@@ -211,6 +211,7 @@ tbody tr:nth-child(odd) {
 .form button {
   margin-top: 2.5%;
   width: 50%;
+  color: black;
 }
 
 .form textarea {
