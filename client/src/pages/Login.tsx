@@ -31,7 +31,7 @@ const Login = () => {
     <div className='container'>
       <form className='form' onSubmit={handleSubmit}>
         <h1>Login</h1>
-        <label >Username</label>
+        <label>Username</label>
         <input 
           type='text'
           name='username'
@@ -45,7 +45,7 @@ const Login = () => {
           value={loginData.password || ''}
           onChange={handleChange}
         />
-        <button type='submit'>Submit Form</button>
+        <button type='submit'><a>Login</a></button>
       </form>
     </div>
     
