@@ -225,6 +225,10 @@ tbody tr:nth-child(odd) {
   padding: 1.5%;
 }
 
+.form-error {
+  color: red;
+}
+
 .editBtn {
   background-color: #f9f9f9;
   border-radius: 8px;

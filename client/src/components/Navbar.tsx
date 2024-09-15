@@ -50,9 +50,7 @@ const Navbar = () => {
                 auth.logout();
               }}
             >
-              <a>
               Logout
-              </a>
             </button>
           </li>
         </>

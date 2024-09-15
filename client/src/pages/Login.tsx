@@ -9,6 +9,9 @@ const Login = () => {
     password: ''
   });
 
+// New state to track errors
+const [error, setError] = useState<string | null>(null);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setLoginData({
@@ -24,6 +27,7 @@ const Login = () => {
       Auth.login(data.token);
     } catch (err) {
       console.error('Failed to login', err);
+      setError('Invalid username or password');
     }
   };
 
@@ -45,7 +49,9 @@ const Login = () => {
           value={loginData.password || ''}
           onChange={handleChange}
         />
-        <button type='submit'><a>Login</a></button>
+        <button type='submit'>Login</button>
+
+        {error && <p className="form-error">{error}</p>}
       </form>
     </div>
     
