@@ -35,6 +35,8 @@ Deployed Link: https://kanban-board-ox3a.onrender.com/
 6. To delete a ticket, select "Delete Ticket"
 7. To logout, select "Logout"
 
+![Screenshot](assets/images/screenshot.png)
+
 ## License
 
 This project is licensed under the MIT license.
